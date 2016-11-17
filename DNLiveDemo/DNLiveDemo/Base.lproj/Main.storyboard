@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DNLiveDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="未连接" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GAw-8b-qsg">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="JIh-iZ-458"/>
+                                    <constraint firstAttribute="height" constant="20" id="X9V-2Y-diI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZCn-SB-KHb">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="4dP-QR-kRd"/>
+                                    <constraint firstAttribute="width" constant="40" id="NZk-RQ-Zh2"/>
+                                </constraints>
+                                <state key="normal" image="close_preview"/>
+                                <connections>
+                                    <action selector="closeBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BZA-vF-c7O"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3cj-bW-61w">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="5pZ-Ap-F7x"/>
+                                    <constraint firstAttribute="width" constant="40" id="Jbm-r9-rt2"/>
+                                </constraints>
+                                <state key="normal" image="camra_preview"/>
+                                <connections>
+                                    <action selector="cameraBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WhY-o4-svU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WEe-b0-bGR">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="Ezj-pO-wdd"/>
+                                    <constraint firstAttribute="height" constant="40" id="KiE-NZ-020"/>
+                                </constraints>
+                                <state key="normal" image="camra_beauty_close"/>
+                                <connections>
+                                    <action selector="beautyBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GTl-y9-PDD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jr6-pJ-Ccq">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="o6I-l5-orw"/>
+                                </constraints>
+                                <state key="normal" title="开始直播">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="startLiveBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IlQ-Ug-Yxd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ZCn-SB-KHb" secondAttribute="trailing" constant="20" id="3dN-eo-X2V"/>
+                            <constraint firstItem="WEe-b0-bGR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="7L8-Ic-kVB"/>
+                            <constraint firstItem="3cj-bW-61w" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="JlO-C5-OLp"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Jr6-pJ-Ccq" secondAttribute="bottom" constant="20" id="Knd-eb-a9G"/>
+                            <constraint firstItem="3cj-bW-61w" firstAttribute="leading" secondItem="WEe-b0-bGR" secondAttribute="trailing" constant="8" id="U0A-uw-Te8"/>
+                            <constraint firstItem="GAw-8b-qsg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="VOB-Nf-Vov"/>
+                            <constraint firstAttribute="trailing" secondItem="Jr6-pJ-Ccq" secondAttribute="trailing" constant="20" id="elH-Ay-q5J"/>
+                            <constraint firstItem="ZCn-SB-KHb" firstAttribute="leading" secondItem="3cj-bW-61w" secondAttribute="trailing" constant="8" id="jMi-xD-Bt9"/>
+                            <constraint firstItem="ZCn-SB-KHb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="qM4-ph-gfk"/>
+                            <constraint firstItem="Jr6-pJ-Ccq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="s5B-5E-vgQ"/>
+                            <constraint firstItem="GAw-8b-qsg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="x4J-tC-kTT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="beautyButton" destination="WEe-b0-bGR" id="rhy-CB-dRl"/>
+                        <outlet property="startLiveButton" destination="Jr6-pJ-Ccq" id="YdE-yh-ah0"/>
+                        <outlet property="stateLabel" destination="GAw-8b-qsg" id="WyQ-1D-wWI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-345" y="107"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="camra_beauty_close" width="25" height="23"/>
+        <image name="camra_preview" width="22" height="19"/>
+        <image name="close_preview" width="18" height="18"/>
+    </resources>
+</document>
