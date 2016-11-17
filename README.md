@@ -1,6 +1,8 @@
 # DNLiveDemo
 直播 LFLiveKit推流+ ijkplayer播放
+
 ## 申请摄像头和麦克风访问权限
+
 ``` swift
 // 请求访问摄像头
 func requestAccessForVideo() -> Void {
@@ -49,7 +51,9 @@ lazy var session: LFLiveSession = {
         return session!
     }()
  ```
+ 
  ## 开始直播结束直播
+ 
  ``` swift
 // 开始直播
 func startLive() {
@@ -63,6 +67,7 @@ func stopLive() -> Void {
 }
  ```
 ## LFLiveSessionDelegate代理回调
+
 ``` swift
 func liveSession(_ session: LFLiveSession?, debugInfo: LFLiveDebug?) {
     print("debugInfo: \(debugInfo?.currentBandwidth)")
